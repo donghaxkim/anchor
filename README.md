@@ -10,21 +10,29 @@ Instructions in CLAUDE.md or conversation context can be forgotten after context
 
 ## Install
 
+### One command (recommended)
+
 ```bash
-# Via Claude Code plugin marketplace
+npx skills add donghaxkim/anchor
+```
+
+Then tell Claude: *"Run anchor setup for this project."*
+
+### Plugin marketplace
+
+```
 /plugin marketplace add donghaxkim/anchor
-
-# Or manually
-git clone https://github.com/donghaxkim/anchor-skill.git ~/.claude/plugins/anchor
+/plugin install anchor@donghaxkim-anchor
 ```
 
-Then run setup in your project:
+### Manual
 
 ```bash
-python ~/.claude/plugins/anchor/scripts/anchor.py setup
+git clone https://github.com/donghaxkim/anchor.git ~/.claude/skills/anchor
+python3 ~/.claude/skills/anchor/scripts/anchor.py setup
 ```
 
-This adds PreToolUse hooks to your project's `.claude/settings.json`.
+The setup command adds PreToolUse hooks to your project's `.claude/settings.json`.
 
 ## Usage
 
