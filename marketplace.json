@@ -4,7 +4,7 @@
   "description": "Protect specific code regions from AI modification. Anchor files, line ranges, functions, or folders so Claude mechanically cannot edit them — enforced by PreToolUse hooks, not instructions.",
   "author": "donghaxkim",
   "license": "MIT",
-  "repository": "https://github.com/donghaxkim/anchor-skill",
+  "repository": "https://github.com/donghaxkim/anchor",
   "keywords": [
     "protection",
     "hooks",
