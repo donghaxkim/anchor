@@ -1,10 +1,11 @@
 # anchor
 
 Pin your code in place. Claude can read it, but can't touch it.
-
 AI coding assistants modify code you didn't ask them to change. They refactor nearby functions while fixing a typo, rewrite config you spent weeks tuning, and touch security-critical logic that was already audited.
 
 `anchor` stops this. Tell Claude which code is off-limits. It can still read and reason about it, but it **physically cannot edit it**. Not an instruction it might forget. A [PreToolUse hook](https://docs.anthropic.com/en/docs/claude-code/hooks) that blocks the edit before it executes.
+
+<img width="800" height="610" alt="anchor" src="https://github.com/user-attachments/assets/e199d576-e305-413c-8f03-bba54a29ebcc" />
 
 ## Install
 
